@@ -14,6 +14,8 @@ class ApiController extends Controller
      * @Route("/api/recipes", name="api_recipes")
      *
      * Needed for client-side navigation after initial page load
+     * @param Request $request
+     * @return JsonResponse
      */
     public function apiRecipesAction(Request $request)
     {
@@ -25,6 +27,9 @@ class ApiController extends Controller
      * @Route("/api/recipes/{id}", name="api_recipe")
      *
      * Needed for client-side navigation after initial page load
+     * @param $id
+     * @param Request $request
+     * @return JsonResponse
      */
     public function apiRecipeAction($id, Request $request)
     {
